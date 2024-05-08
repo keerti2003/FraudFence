@@ -1,18 +1,49 @@
-**FraudFence App**
+# FraudFence App
 
-FraudFence is a powerful fraud detection system developed using machine learning algorithms. This application is designed to identify and prevent fraudulent activities in transaction data with high accuracy.
+FraudFence is an application designed to help detect fraudulent transactions based on user data. It utilizes machine learning models to predict the likelihood of fraud in transactions and offers insights into potentially fraudulent activities.
 
-**Key Features:**
+## Table of Contents
 
-Utilizes machine learning models including Logistic Regression, K-Nearest Neighbors, Support Vector Machine, Random Forest, and XGBoost for fraud detection.
-Comprehensive functionalities for model training, tuning, and evaluation using GridSearchCV.
-Streamlit-powered intuitive web interface facilitates easy CSV file uploads for both training and prediction tasks.
-Provides insightful visualizations of prediction results to enhance user understanding and interaction.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
 
-**Usage:**
+## Introduction
 
-To use FraudFence:
+The FraudFence App aims to provide users with a tool for identifying fraudulent transactions by analyzing transaction data. By training machine learning models on historical transaction data, the app can predict the likelihood of fraud in new transactions, enabling users to take preventive measures and mitigate potential losses.
 
-1. Clone the repository to your local machine.
-2. Install the required dependencies.
-3. Run the application using Streamlit.
+## Features
+
+- **Model Training**: Users can upload their transaction data to train machine learning models for fraud detection.
+- **Prediction**: The app allows users to upload transaction data for prediction, and it identifies potentially fraudulent transactions.
+- **Visualization**: FraudFence provides visualizations of fraud and non-fraud transactions to help users understand the distribution of fraudulent activities.
+
+## Installation
+
+To run the FraudFence App locally, follow these steps:
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/keerti2003/FraudFence.git
+   ```
+
+2. Run the Streamlit app:
+
+   ```bash
+   streamlit run main.py
+   ```
+
+## Usage
+
+1. Launch the application by running `streamlit run main.py`.
+2. On the home page, you'll find two options: "Train Model" and "Predict."
+3. **Train Model**: Upload a CSV file containing transaction data to train the machine learning models for fraud detection. Enter a filename for the trained model.
+4. **Predict**: Upload a CSV file containing transaction data to make predictions using a pre-trained model. Select a trained model from the dropdown menu.
+5. After submitting the data, the app will display predictions and visualizations of fraudulent and non-fraudulent transactions.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
